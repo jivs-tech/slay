@@ -1,0 +1,64 @@
+/* Glassmorphism + Neon Minimal UI */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+h1.custom-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 45px;
+    color: #00fff7;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #00fff7, 0 0 20px #00fff7;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #00fff7;
+    }
+    to {
+        text-shadow: 0 0 20px #00fff7;
+    }
+}
+
+.stApp {
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Container with glass effect */
+.block-container {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 32px rgba(0, 255, 255, 0.2);
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Buttons */
+button {
+    background-color: #00fff7;
+    color: #000;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    border: none;
+}
+
+button:hover {
+    background-color: #0ff;
+    transform: scale(1.05);
+}
+
+/* Expanders */
+.streamlit-expanderHeader {
+    color: #00fff7;
+    font-weight: bold;
+}
