@@ -1,0 +1,5 @@
+streamlit_lottie
+streamlit
+pandas
+plotly
+numpy
